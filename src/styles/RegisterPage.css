@@ -1,0 +1,6 @@
+/* Error Styling for Inputs */
+input.error {
+    border: 2px solid red;
+    box-shadow: 0 0 5px red;
+  }
+  

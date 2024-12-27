@@ -1,0 +1,121 @@
+/* Global Variables */
+:root {
+  --primary-color: #008080; /* Teal as the new primary color */
+  --primary-color-hover: #006666; /* Darker teal for hover state */
+  --secondary-color: #ffffff; /* White for backgrounds */
+  --text-color: #2c3e50; /* Dark blue-gray for text */
+  --light-text-color: #e8f5e9; /* Light green for hover effects */
+  --box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Box shadow for elements */
+  --border-radius: 8px; /* Common border radius */
+  --font-size-heading: 1.5rem; /* Font size for headings */
+  --font-size-paragraph: 1rem; /* Font size for paragraphs */
+}
+
+/* General Body Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Universal Box Sizing */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-color);
+  font-weight: bold;
+  margin: 0 0 10px;
+}
+
+h2 {
+  font-size: var(--font-size-heading);
+  text-align: center;
+  color: var(--primary-color);
+}
+
+/* Links */
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--primary-color-hover);
+}
+
+/* Buttons */
+button {
+  margin-top: 10px;
+  width: 100%;
+  padding: 12px;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border: none;
+  border-radius: var(--border-radius);
+  font-size: var(--font-size-paragraph);
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: var(--box-shadow);
+}
+
+button:hover {
+  background-color: var(--primary-color-hover);
+}
+
+/* Inputs */
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: var(--border-radius);
+  font-size: var(--font-size-paragraph);
+  margin-bottom: 20px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 4px rgba(76, 175, 80, 0.3);
+  outline: none;
+}
+
+/* Shared Container Styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.form-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: var(--secondary-color);
+  border: 1px solid #ddd;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+p {
+  font-size: var(--font-size-paragraph);
+  text-align: center;
+  margin-top: 10px;
+}
+
+p a {
+  font-weight: bold;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
