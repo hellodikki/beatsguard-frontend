@@ -1,70 +1,101 @@
-# Getting Started with Create React App
+# BeatsGuard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Aperçu
 
-## Available Scripts
+BeatsGuard est une solution innovante basée sur une architecture de microservices pour le suivi des patients à domicile. Elle combine des technologies modernes telles que Spring Boot, React, Flutter et l'IoT, offrant une surveillance en temps réel des indicateurs de santé et un système d'alertes intelligentes. Son architecture modulaire assure évolutivité et intégration transparente.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## Architecture 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Microservices
+- **Backend** : Spring Boot pour un développement robuste et sécurisé.
+- **Frontend** : React pour des interfaces utilisateur interactives.
+- **Mobile** : Flutter pour une accessibilité multiplateforme.
+- **API Gateway** : Spring Cloud Gateway pour centraliser les communications entre services.
+- **Bases de données** : Chaque microservice a sa propre base de données (MySQL, MongoDB).
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Surveillance IoT
+- **Matériel** :
+  - **ESP32** : Collecte des données des capteurs.
+  - **Capteurs** :
+    - MPU6050 : Détection des mouvements et des chutes.
+    - MAX30102 : Mesure de la fréquence cardiaque et du taux d'oxygène.
+    - DHT11 : Suivi de la température et de l'humidité.
+- **Communication** : Transmission sécurisée des données au backend.
 
-### `npm test`
+## Fonctionnalités Principales
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 1. Surveillance en Temps Réel
+- **Description** : Surveillance constante de l'état des patients grâce aux capteurs IoT.
+- **Capture d'écran** :
+  
+  ![Surveillance en temps réel](./assets/screenshots/measurement_page.jpg)
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 2. Historique des Mesures
+- **Description** : Accédez aux données passées pour une prise de décision éclairée.
+- **Capture d'écran** :
+  
+  ![Historique des mesures](./assets/screenshots/measurement_history.jpg)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 3. Chatbot Intégré
+- **Description** : Obtenez des réponses instantanées à des questions médicales courantes.
+- **Capture d'écran** :
+  
+  ![Chatbot intégré](./assets/screenshots/chat_with_chatbot.jpg)
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Démonstration Vidéo
+Découvrez BeatsGuard en action dans cette vidéo :
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+[![Regardez la vidéo](assets/screenshots/Screenshot%202024-12-27%20182748.png)](https://www.youtube.com/watch?v=example)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+> Cliquez sur l'image pour voir la démonstration complète sur [Streamable](https://www.youtube.com/watch?v=example).
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+### Sécurité et Qualité
+- **JWT** : Protection des API.
+- **SonarQube** : Analyse et amélioration continue de la qualité du code.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Conteneurisation et Déploiement
+- **Docker** : Conteneurisation des microservices.
+- **Kubernetes** : Gestion avancée des conteneurs.
+- **CI/CD** : Automatisation avec Jenkins pour les tests, l'intégration et le déploiement.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Interfaces Utilisateur
+- **Mobile (Flutter)** :
+  - Visualisation des données en temps réel.
+  - Réception d'alertes critiques.
+  - Chatbot interactif pour des conseils de santé.
+- **Web (React)** :
+  - Tableau de bord pour les soignants.
+  - Historique des alertes et des comportements.
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Impact et Valeur
 
-### Analyzing the Bundle Size
+- **Amélioration des Soins** :
+  - Surveillance proactive des patients.
+  - Réduction de la charge de travail des soignants.
+- **Innovations Techniques** :
+  - Détection des anomalies avec apprentissage automatique.
+  - Assistance intelligente via un chatbot interactif.
+- **Flexibilité** :
+  - Adaptabilité à différents environnements et besoins spécifiques.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## Contributeurs
+- FATRAH Ahmed ([GitHub](https://github.com/AhmedFatrah2001))
+- DAHBI Ayoub ([GitHub](https://github.com/hellodikki))
+- BOUFARRA Oussama ([GitHub](https://github.com/BOUFARRA-OUSSAMA))
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Pour toute question, contactez-nous : [dahbiayoub2001@gmail.com](mailto:dahbiayoub2001@gmail.com).
